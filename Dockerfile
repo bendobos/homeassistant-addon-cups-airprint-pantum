@@ -14,13 +14,6 @@ RUN apt-get update \
         libnss-mdns \
         dbus \
         colord \
-        printer-driver-all \
-        printer-driver-gutenprint \
-        openprinting-ppds \
-        hpijs-ppds \
-        hp-ppd  \
-        hplip \
-        printer-driver-foo2zjs \
         cups-pdf \
         gnupg2 \
         lsb-release \
