@@ -25,6 +25,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 
 COPY rootfs /
+RUN chmod +x /usr/lib/cups/filter/pt2500Filter
 
 # Add user and disable sudo password checking
 RUN useradd \
