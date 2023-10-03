@@ -31,6 +31,10 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
 
+# Copy and install Pantum Drivers (https://global.pantum.com/support/download/driver/)
+COPY driver/pantum_1.1.106-1_amd64.deb /usr/pantum-driver/pantum_amd64.deb
+RUN dpkg -i /usr/pantum-driver/pantum_amd64.deb
+
 COPY rootfs /
 
 # Add user and disable sudo password checking

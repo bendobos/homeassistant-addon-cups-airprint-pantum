@@ -1,5 +1,5 @@
 # homeassistant addon cups airprint
-CUPS addon with working Avahi in reflector mode 
+CUPS addon with working Avahi in reflector mode and Pantum printer drivers.
 
 Tested with Home Assistant version **2023.9**
 
